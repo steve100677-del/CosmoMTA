@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoMTA - Ahol a történeted kezdődik</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #1e1b4b 0%, #0b0f19 100%);
+            border-bottom: 2px solid #3b82f6;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #60a5fa;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #9ca3af;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .ip-box {
+            background-color: #1f2937;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            border: 1px solid #374151;
+        }
+        .ip-box span {
+            color: #34d399;
+            font-weight: bold;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #111827;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            transition: 0.3s;
+        }
+        .card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: #60a5fa;
+        }
+        .card p {
+            color: #9ca3af;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #030712;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CosmoMTA</h1>
+        <p>Ahol a te történeted is életre kel a Multi Theft Auto világában.</p>
+    </header>
+
+    <div class="container">
+        <div class="ip-box">
+            Szerver IP Cím: <span>mtasa://csatlakozas.cosmomta.hu:22003</span>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Szabályzat</h3>
+                <p>Ismerd meg a szerver szabályait, hogy a közösség minden tagja számára élvezetes legyen a játék.</p>
+                <a href="#" class="btn">Elolvasom</a>
+            </div>
+            <div class="card">
+                <h3>UCP Panel</h3>
+                <p>Kezeld a karaktered, tekintsd meg a járműveidet, vagyonodat a Vezérlőpulton keresztül.</p>
+                <a href="#" class="btn">Bejelentkezés</a>
+            </div>
+            <div class="card">
+                <h3>Discord Közösség</h3>
+                <p>Csatlakozz a közösségünkhöz, találkozz a játékosokkal és értesülj a friss hírekről.</p>
+                <a href="#" class="btn">Belépés</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CosmoMTA. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>
